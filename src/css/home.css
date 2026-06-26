@@ -1,0 +1,61 @@
+.divider{
+    height: 0.5px;
+    background-color: #141f0179;
+    width: 100%;
+}
+.home_header{
+    overflow-x: hidden;
+
+    min-height: auto;
+    background: linear-gradient(
+        90deg,
+        #050505 0%,
+        #050505 45%,
+        #1A2D00 75%,
+        #2D4A00 100%
+    );
+    padding:2rem;
+
+}
+.quote{
+    color: #A4FF00;
+    font-size:clamp(0.9rem, 1.5vw, 1.2rem) !important;
+
+
+}
+ 
+.moto h1{
+
+        font-weight:1000 !important;
+        padding-left: 1rem;
+        line-height: 0.8;
+        font-size: clamp(36px, 8vw, 94px);
+}
+ .breath{
+    color: #A4FF00;
+ }
+ .home_para{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    font-size:clamp(0.9rem, 1.5vw, 1.2rem) !important;
+    color: #A0A0A0;
+    line-height: 1;
+
+ }
+ .custom-btn{
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    padding: 0.5rem 1.3rem;
+    /* margin: 0rem auto; */
+    color: white;
+    border: 1px solid #A4FF00;
+    background: transparent;
+        border-radius: 50px;
+
+}
+ .custom-btn:hover{
+    background-color: #A4FF00;
+    color: black;
+}
+.content-row{
+    margin-bottom: 0px;
+}

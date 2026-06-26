@@ -1,0 +1,23 @@
+/* .nav{
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    padding: 0px; */
+.navbar{
+        background: linear-gradient(
+90deg,
+#050505 0%,
+#050505 45%,
+#1A2D00 75%,
+#2D4A00 100%
+);
+}
+/* .navbar-brand{
+    margin-left: 100px;
+} */
+.brand_text{
+    color:chartreuse
+}
+.nav-item{
+    color:#A0A0A0;
+}
