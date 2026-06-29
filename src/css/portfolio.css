@@ -1,0 +1,193 @@
+.portfolio{
+    overflow-x:hidden;
+    min-height:100vh;
+    padding:3rem;
+    background:linear-gradient(
+        90deg,
+        #050505 0%,
+        #050505 45%,
+        #1A2D00 75%,
+        #2D4A00 100%
+    );
+}
+
+.intro_portfolio{
+    margin-bottom:3rem;
+}
+
+.number{
+    color:#A4FF00;
+    font-size:.9rem;
+}
+
+.who{
+    color:#A0A0A0;
+    font-size:.9rem;
+}
+
+.hero_portfolio{
+    color:#fff;
+    font-size:clamp(42px,8vw,92px);
+    font-weight:900;
+    line-height:.9;
+}
+
+.builds{
+    color:#A4FF00;
+}
+
+.portfolio-card{
+    position:relative;
+    overflow:hidden;
+    border:1px solid #1A2D00;
+    border-radius:20px;
+    padding:2rem;
+    background:transparent;
+    transition:.4s;
+}
+
+.portfolio-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        #050505 0%,
+        #283f05 60%,
+        #8eda24 100%
+    );
+    opacity:0;
+    transition:.5s;
+}
+
+.portfolio-card:hover::before{
+    opacity:1;
+}
+
+.portfolio-card>*{
+    position:relative;
+    z-index:1;
+}
+
+.card-number{
+    color:#A4FF00;
+    font-size:18px;
+    font-weight:700;
+}
+
+.portfolio_head{
+    color:white;
+    font-size:2rem;
+    font-weight:800;
+    line-height:1.1;
+    margin:0;
+}
+
+.head_small{
+    color:#d0d0d0;
+    font-size:1rem;
+}
+
+.arrow-icon{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    transition: transform .4s ease;
+}
+.portfolio-card:hover .arrow-icon{
+    transform:rotate(90deg);
+}
+
+@media (max-width:991px){
+
+.portfolio{
+    padding:2rem;
+}
+
+.hero_portfolio{
+    font-size:60px;
+}
+
+.portfolio-card{
+    padding:1.7rem;
+}
+
+.portfolio_head{
+    font-size:1.6rem;
+}
+
+.head_small{
+    margin-top:.4rem;
+}
+
+.arrow-icon{
+    font-size:26px;
+}
+
+}
+
+@media (max-width:767px){
+
+.portfolio{
+    padding:1.5rem;
+}
+
+.intro_portfolio{
+    flex-direction:column;
+    gap:.4rem;
+    margin-bottom:2rem;
+}
+
+.hero_portfolio{
+    font-size:42px;
+}
+
+.portfolio-card{
+    padding:1.4rem;
+}
+
+.card-number{
+    font-size:16px;
+}
+
+.portfolio_head{
+    font-size:1.3rem;
+}
+
+.head_small{
+    font-size:.9rem;
+}
+
+.arrow-icon{
+    font-size:24px;
+}
+
+}
+
+@media (max-width:575px){
+
+.portfolio{
+    padding:1rem;
+}
+
+.hero_portfolio{
+    font-size:34px;
+}
+
+.portfolio-card{
+    padding:1.2rem;
+}
+
+.portfolio_head{
+    font-size:1.1rem;
+}
+
+.head_small{
+    font-size:.85rem;
+}
+
+.arrow-icon{
+    font-size:22px;
+}
+
+}

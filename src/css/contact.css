@@ -1,0 +1,211 @@
+.contact_header{
+    overflow-x:hidden;
+    min-height:100vh;
+    padding:5rem 0;
+    background:linear-gradient(
+        90deg,
+        #050505 0%,
+        #050505 45%,
+        #1A2D00 75%,
+        #2D4A00 100%
+    );
+}
+
+.con_moto{
+    margin-top:3rem;
+}
+
+.con_moto h1{
+    color:#fff;
+    font-size:clamp(42px,8vw,95px);
+    font-weight:900;
+    line-height:.9;
+    margin:0;
+}
+
+.breath{
+    color:#A4FF00;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+}
+
+.email,
+.location,
+.social{
+    color:#fff;
+    font-size:18px;
+    letter-spacing:2px;
+    margin-bottom:.8rem;
+    margin-top:2rem;
+}
+
+.email:first-child{
+    margin-top:0;
+}
+
+.insightoh,
+.loc,
+.insta{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#BEBEBE;
+    font-size:17px;
+    transition:.3s;
+}
+
+.insightoh:hover,
+.loc:hover,
+.insta:hover{
+    color:#A4FF00;
+}
+
+.insightoh i,
+.loc i{
+    color:#A4FF00;
+    font-size:18px;
+}
+
+.contact_card{
+    width:100%;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+}
+
+.contact_form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact_form label{
+    color:#D5D5D5;
+    font-size:14px;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.contact_form input,
+.contact_form textarea{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #555;
+    color:#fff;
+    padding:14px 0;
+    margin-bottom:28px;
+    outline:none;
+    font-size:16px;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus{
+    border-bottom:2px solid #A4FF00;
+}
+
+.contact_form textarea{
+    resize:none;
+}
+
+.send_btn{
+    width:fit-content;
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:#A4FF00;
+    color:#000;
+    font-weight:700;
+    transition:.3s;
+}
+
+.send_btn:hover{
+    background:#d4ff67;
+}
+
+@media (max-width:991px){
+
+.contact_header{
+    padding:4rem 0;
+}
+
+.con_moto{
+    margin-top:2rem;
+}
+
+.info{
+    margin-bottom:2rem;
+}
+
+.contact_card{
+    padding:30px;
+}
+
+}
+
+@media (max-width:767px){
+
+.contact_header{
+    padding:3rem 0;
+}
+
+.intro_about{
+    gap:10px;
+}
+
+.con_moto h1{
+    font-size:42px;
+}
+
+.contact_card{
+    padding:25px;
+}
+
+.email,
+.location,
+.social{
+    font-size:16px;
+}
+
+.insightoh,
+.loc,
+.insta{
+    font-size:16px;
+}
+
+.send_btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media (max-width:576px){
+
+.contact_header{
+    padding:2.5rem 0;
+}
+
+.con_moto h1{
+    font-size:34px;
+}
+
+.contact_card{
+    padding:20px;
+}
+
+.contact_form input,
+.contact_form textarea{
+    font-size:15px;
+}
+
+.send_btn{
+    padding:12px;
+}
+
+}

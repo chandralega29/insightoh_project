@@ -1,61 +1,122 @@
-.divider{
-    height: 0.5px;
-    background-color: #141f0179;
-    width: 100%;
-}
 .home_header{
-    overflow-x: hidden;
-
-    min-height: auto;
-    background: linear-gradient(
+    min-height:100vh;
+    overflow-x:hidden;
+    padding:120px 2rem 2rem;
+    background:linear-gradient(
         90deg,
         #050505 0%,
         #050505 45%,
         #1A2D00 75%,
         #2D4A00 100%
     );
-    padding:2rem;
-
 }
+
 .quote{
-    color: #A4FF00;
-    font-size:clamp(0.9rem, 1.5vw, 1.2rem) !important;
-
-
+    color:#A4FF00;
+    font-size:clamp(0.9rem,1.5vw,1.2rem);
 }
- 
+
+.moto{
+    margin-top:2rem;
+}
+
 .moto h1{
-
-        font-weight:1000 !important;
-        padding-left: 1rem;
-        line-height: 0.8;
-        font-size: clamp(36px, 8vw, 94px);
+    color:#fff;
+    font-weight:900;
+    line-height:.9;
+    font-size:clamp(42px,8vw,94px);
+    margin:0;
 }
- .breath{
-    color: #A4FF00;
- }
- .home_para{
-    padding-left: 1rem;
-    padding-top: 2rem;
-    font-size:clamp(0.9rem, 1.5vw, 1.2rem) !important;
-    color: #A0A0A0;
-    line-height: 1;
 
- }
- .custom-btn{
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    padding: 0.5rem 1.3rem;
-    /* margin: 0rem auto; */
-    color: white;
-    border: 1px solid #A4FF00;
-    background: transparent;
-        border-radius: 50px;
+.breath{
+    color:#A4FF00;
+    display:inline-block;
+    animation:breathe 3s ease-in-out infinite;
+}
 
+.home_para{
+    color:#A0A0A0;
+    font-size:clamp(1rem,1.5vw,1.2rem);
+    max-width:500px;
+    line-height:1.6;
+    margin:0;
 }
- .custom-btn:hover{
-    background-color: #A4FF00;
-    color: black;
-}
+
 .content-row{
-    margin-bottom: 0px;
+    margin-top:3rem;
+}
+
+.custom-btn{
+    font-size:clamp(.9rem,1.5vw,1rem);
+    padding:.8rem 1.5rem;
+    color:#fff;
+    border:1px solid #A4FF00;
+    border-radius:50px;
+    background:transparent;
+    transition:.3s;
+}
+
+.custom-btn:hover{
+    background:#A4FF00;
+    color:#000;
+}
+
+@keyframes breathe{
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.03);
+    }
+}
+
+@media (max-width:992px){
+
+    .home_header{
+        padding:110px 1.5rem 2rem;
+    }
+
+    .content-row{
+        margin-top:2rem;
+    }
+
+    .custom-btn{
+        margin-top:0;
+    }
+}
+
+@media (max-width:768px){
+
+    .home_header{
+        padding:100px 1rem 2rem;
+    }
+
+    .moto h1{
+        line-height:1;
+    }
+
+    .home_para{
+        max-width:100%;
+    }
+
+    .custom-btn{
+        width:100%;
+        text-align:center;
+    }
+}
+
+@media (max-width:576px){
+
+    .quote{
+        font-size:.85rem;
+    }
+
+    .moto h1{
+        font-size:42px;
+    }
+
+    .home_para{
+        font-size:.95rem;
+    }
 }
